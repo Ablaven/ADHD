@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive live sessions with ADHD experts - workshops, group therapy, and Q&A sessions">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <title>Live Sessions - ADHD Support Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span>ADHD Support</span>
+            </a>
+            
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="live-sessions.html">Live Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parents.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html#overview"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="live-sessions-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content scroll-animate">
+                            <h1>Live Interactive Sessions</h1>
+                            <p class="lead">Connect with ADHD experts, join supportive group sessions, and participate in interactive workshops from the comfort of your home.</p>
+                            <div class="hero-buttons">
+                                <a href="#upcoming-sessions" class="btn btn-purple btn-lg">View Schedule</a>
+                                <a href="#how-it-works" class="btn btn-outline-purple btn-lg">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image scroll-animate" style="animation-delay: 0.3s">
+                            <img src="./Images/hero-placeholder.jpg" alt="Live session in progress" class="img-fluid rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Session Categories -->
+        <section class="session-categories scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Session Types</h2>
+                <p class="section-subtitle">Choose from a variety of interactive sessions designed to support your journey</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Group Therapy</h3>
+                            <p>Join supportive group sessions led by licensed therapists. Share experiences, learn coping strategies, and connect with others facing similar challenges.</p>
+                            <ul class="category-features">
+                                <li><i class="fas fa-check"></i> Small group sizes (max 8)</li>
+                                <li><i class="fas fa-check"></i> Weekly sessions</li>
+                                <li><i class="fas fa-check"></i> Age-specific groups</li>
+                            </ul>
+                            <a href="#upcoming-sessions" class="btn btn-purple">Find a Group</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <h3>Expert Workshops</h3>
+                            <p>Interactive workshops covering various aspects of ADHD management, from organization skills to emotional regulation.</p>
+                            <ul class="category-features">
+                                <li><i class="fas fa-check"></i> Practical exercises</li>
+                                <li><i class="fas fa-check"></i> Take-home resources</li>
+                                <li><i class="fas fa-check"></i> Q&A sessions</li>
+                            </ul>
+                            <a href="#upcoming-sessions" class="btn btn-purple">Browse Workshops</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Q&A Sessions</h3>
+                            <p>Open discussions with ADHD specialists where you can ask questions and get expert advice on specific challenges.</p>
+                            <ul class="category-features">
+                                <li><i class="fas fa-check"></i> Expert panel</li>
+                                <li><i class="fas fa-check"></i> Topic-focused</li>
+                                <li><i class="fas fa-check"></i> Community driven</li>
+                            </ul>
+                            <a href="#upcoming-sessions" class="btn btn-purple">Join Discussion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Sessions -->
+        <section id="upcoming-sessions" class="upcoming-sessions scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Upcoming Sessions</h2>
+                <p class="section-subtitle">Reserve your spot in our upcoming live sessions</p>
+                <div class="session-filters mb-4">
+                    <div class="btn-group" role="group" aria-label="Session type filters">
+                        <button type="button" class="btn btn-outline-purple active">All</button>
+                        <button type="button" class="btn btn-outline-purple">Group Therapy</button>
+                        <button type="button" class="btn btn-outline-purple">Workshops</button>
+                        <button type="button" class="btn btn-outline-purple">Q&A</button>
+                    </div>
+                </div>
+                <div class="sessions-grid">
+                    <div class="session-card">
+                        <div class="session-type">
+                            <span class="badge bg-purple">Workshop</span>
+                        </div>
+                        <div class="session-datetime">
+                            <div class="date">
+                                <span class="month">MAR</span>
+                                <span class="day">20</span>
+                            </div>
+                            <div class="time">2:00 PM - 3:30 PM EST</div>
+                        </div>
+                        <div class="session-info">
+                            <h3>Time Management Strategies</h3>
+                            <p>Learn practical techniques for better time management and organization.</p>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Dr. Sarah Johnson</span>
+                                <span><i class="fas fa-users"></i> 20 spots left</span>
+                            </div>
+                        </div>
+                        <div class="session-actions">
+                            <button class="btn btn-purple">Reserve Spot</button>
+                            <button class="btn btn-outline-purple">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="session-card">
+                        <div class="session-type">
+                            <span class="badge bg-purple">Group Therapy</span>
+                        </div>
+                        <div class="session-datetime">
+                            <div class="date">
+                                <span class="month">MAR</span>
+                                <span class="day">22</span>
+                            </div>
+                            <div class="time">6:00 PM - 7:30 PM EST</div>
+                        </div>
+                        <div class="session-info">
+                            <h3>Adult ADHD Support Group</h3>
+                            <p>Weekly support group for adults dealing with ADHD challenges.</p>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Dr. Michael Chen</span>
+                                <span><i class="fas fa-users"></i> 3 spots left</span>
+                            </div>
+                        </div>
+                        <div class="session-actions">
+                            <button class="btn btn-purple">Reserve Spot</button>
+                            <button class="btn btn-outline-purple">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="session-card">
+                        <div class="session-type">
+                            <span class="badge bg-purple">Q&A</span>
+                        </div>
+                        <div class="session-datetime">
+                            <div class="date">
+                                <span class="month">MAR</span>
+                                <span class="day">25</span>
+                            </div>
+                            <div class="time">7:00 PM - 8:00 PM EST</div>
+                        </div>
+                        <div class="session-info">
+                            <h3>Ask the Experts: Medication</h3>
+                            <p>Open Q&A about ADHD medication with our expert panel.</p>
+                            <div class="session-meta">
+                                <span><i class="fas fa-user"></i> Expert Panel</span>
+                                <span><i class="fas fa-users"></i> 50 spots left</span>
+                            </div>
+                        </div>
+                        <div class="session-actions">
+                            <button class="btn btn-purple">Reserve Spot</button>
+                            <button class="btn btn-outline-purple">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="how-it-works scroll-animate">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Join our live sessions in four simple steps</p>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Choose Your Session</h3>
+                        <p>Browse our schedule and select a session that matches your needs and availability.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Reserve Your Spot</h3>
+                        <p>Book your place in the session. You'll receive confirmation and reminder emails.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Join the Session</h3>
+                        <p>Click the link in your email to join the session at the scheduled time.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Participate & Learn</h3>
+                        <p>Engage with experts and peers, ask questions, and gain valuable insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section scroll-animate">
+            <div class="container">
+                <div class="cta-content text-center">
+                    <h2>Ready to Join a Session?</h2>
+                    <p>Take the first step towards better ADHD management with our expert-led live sessions.</p>
+                    <div class="cta-buttons">
+                        <a href="#upcoming-sessions" class="btn btn-purple btn-lg">View Schedule</a>
+                        <a href="contact.html" class="btn btn-outline-purple btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Session Details Modal -->
+        <div class="modal fade" id="sessionDetailsModal" tabindex="-1" aria-labelledby="sessionDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="sessionDetailsModalLabel">Session Details</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="sessionDetailsBody">
+                        <!-- Content will be dynamically populated -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-purple" id="confirmReservationBtn">Reserve Spot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Reminder Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login Required</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please log in to reserve your spot in this session.</p>
+                        <div class="d-grid gap-2">
+                            <a href="login.html" class="btn btn-purple">Log In</a>
+                            <a href="signup.html" class="btn btn-outline-purple">Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                    <h5 class="footer-heading">About ADHD Support</h5>
+                    <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>
+                            <a href="mailto:support@adhd.com">
+                                <i class="far fa-envelope me-2"></i>
+                                support@adhd.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890">
+                                <i class="fas fa-phone me-2"></i>
+                                +1 (234) 567-890
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                    <h5 class="footer-heading">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-4 border-top">
+                <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-bot-toggle" id="chatBotToggle" aria-label="Toggle chat bot">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container" id="chatBotContainer">
+            <div class="chat-bot-header">
+                <h3>ADHD Support Assistant</h3>
+                <button class="chat-bot-close" id="chatBotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-bot-messages" id="chatBotMessages">
+                <div class="chat-message bot">
+                    <p>Hello! I can help you find and book live sessions that match your needs. What type of session are you interested in?</p>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chatBotInput" placeholder="Type your message..." aria-label="Chat message">
+                <button id="chatBotSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/live-sessions.js"></script>
+    <script src="./Js/animations.js"></script>
+    <script src="./Js/chatbot.js"></script>
+    <script src="./Js/theme.js"></script>
+</body>
+</html> 

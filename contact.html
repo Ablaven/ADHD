@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for support and inquiries about ADHD Support Platform">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <title>Contact Us - ADHD Support Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span>ADHD Support</span>
+            </a>
+            
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live-sessions.html">Live Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parents.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-content scroll-animate">
+                    <h1>Get in Touch</h1>
+                    <p class="lead">We're here to help and answer any questions you might have</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info-section scroll-animate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="contact-card">
+                            <div class="contact-icon text-purple">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p>Available Monday to Friday</p>
+                            <p>9:00 AM - 6:00 PM EST</p>
+                            <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-card">
+                            <div class="contact-icon text-purple">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>We'll respond within 24 hours</p>
+                            <p>During business days</p>
+                            <a href="mailto:support@adhd.com" class="contact-link">support@adhd.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-card">
+                            <div class="contact-icon text-purple">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <p>123 ADHD Support Street</p>
+                            <p>New York, NY 10001</p>
+                            <a href="https://maps.google.com" target="_blank" rel="noopener" class="contact-link">View on Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section scroll-animate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-form-content">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" name="subject" class="form-control" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="courses">Course Information</option>
+                                        <option value="billing">Billing Questions</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-purple">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-image">
+                            <img src="./Images/contact.jpg" alt="Contact us">
+                            <div class="contact-overlay">
+                                <div class="contact-hours">
+                                    <h3>Office Hours</h3>
+                                    <ul class="hours-list">
+                                        <li>
+                                            <span>Monday - Friday</span>
+                                            <span>9:00 AM - 6:00 PM</span>
+                                        </li>
+                                        <li>
+                                            <span>Saturday</span>
+                                            <span>10:00 AM - 4:00 PM</span>
+                                        </li>
+                                        <li>
+                                            <span>Sunday</span>
+                                            <span>Closed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How quickly can I expect a response?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Can I schedule a consultation?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes! You can schedule a consultation through our online booking system or by calling us directly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Do you offer emergency support?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                For emergencies outside of business hours, please contact your local emergency services or crisis hotline.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="footer-section" role="contentinfo">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                <h5 class="footer-heading">About ADHD Support</h5>
+                <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                <h5 class="footer-heading">Contact Us</h5>
+                <ul class="list-unstyled footer-links">
+                    <li>
+                        <a href="mailto:support@adhd.com">
+                            <i class="far fa-envelope me-2"></i>
+                            support@adhd.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (234) 567-890
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                <h5 class="footer-heading">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-4 mt-4 border-top">
+            <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-bot-toggle" id="chatBotToggle" aria-label="Toggle chat bot">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container" id="chatBotContainer">
+            <div class="chat-bot-header">
+                <h3>ADHD Support Assistant</h3>
+                <button class="chat-bot-close" id="chatBotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-bot-messages" id="chatBotMessages">
+                <div class="chat-message bot">
+                    <p>Hello! I'm here to help you with any questions about ADHD. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chatBotInput" placeholder="Type your message..." aria-label="Chat message">
+                <button id="chatBotSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/animations.js"></script>
+    <script src="./Js/chatbot.js"></script>
+    <script src="./Js/contact.js"></script>
+    <script src="./Js/theme.js"></script>
+</body>
+</html> 

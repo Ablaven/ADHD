@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="ADHD Support Platform - Comprehensive resources for individuals, parents, and educators">
+
+<link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+
+<title>ADHD Support Platform</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link rel="stylesheet" href="./Css/all.min.css">
+
+<link rel="stylesheet" href="./Css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./Css/style.css">
+
+</head>
+
+<body>
+
+<!-- Skip to main content for accessibility -->
+
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+<!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+
+                <span>ADHD Support</span>
+
+            </a>
+
+            
+
+            <!-- Toggler -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            
+
+            <!-- Links -->
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="courses.html">Courses</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="blog.html">Blog</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="live-sessions.html">Live Sessions</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="parents.html">Parents</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="about.html">About Us</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="contact.html">Contact</a>
+
+                    </li>
+
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html#overview"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        </nav>
+
+    <main id="main-content">
+
+        <!-- Hero Carousel -->
+
+        <header class="hero-section">
+
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <!-- Add floating shapes -->
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+
+                <!-- Add particles container -->
+                <div class="carousel-particles">
+                    <!-- Particles will be added dynamically via JavaScript -->
+                </div>
+
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="ADHD Course slide"></button>
+
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Teachers Resources slide"></button>
+
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Parents Guide slide"></button>
+
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="6000">
+
+                        <div class="carousel-caption-container">
+
+                            <div class="container">
+
+                                <div class="carousel-caption text-start animate-fadeInUp">
+
+                                    <span class="badge rounded-pill mb-2" style="background-color: var(--purple-700)">Featured Course</span>
+
+                                    <h1>Understanding ADHD</h1>
+
+                                    <p class="lead">Explore our comprehensive course designed to help you navigate the challenges of ADHD with confidence and clarity.</p>
+
+                                    <p><a class="btn btn-lg btn-purple" href="/courses/understanding-adhd">Start Learning <i class="fas fa-arrow-right ms-2"></i></a></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="6000">
+
+                        <div class="carousel-caption-container">
+
+                            <div class="container">
+
+                                <div class="carousel-caption animate-fadeInUp">
+
+                                    <span class="badge rounded-pill mb-2" style="background-color: var(--purple-700)">For Educators</span>
+
+                                    <h1>Empowering Teachers</h1>
+
+                                    <p class="lead">Access specialized resources and strategies to create an inclusive learning environment for students with ADHD.</p>
+
+                                    <p><a class="btn btn-lg btn-purple" href="/courses/teacher-resources">View Resources <i class="fas fa-graduation-cap ms-2"></i></a></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="6000">
+
+                        <div class="carousel-caption-container">
+
+                            <div class="container">
+
+                                <div class="carousel-caption text-end animate-fadeInUp">
+
+                                    <span class="badge rounded-pill mb-2" style="background-color: var(--purple-700)">For Parents</span>
+
+                                    <h1>Guidance for Parents</h1>
+
+                                    <p class="lead">Discover effective strategies to support your child's development and create a nurturing environment at home.</p>
+
+                                    <p><a class="btn btn-lg btn-purple" href="/courses/parent-guide">Get Started <i class="fas fa-heart ms-2"></i></a></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">Previous</span>
+
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">Next</span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Ad Space 1 -->
+        <section class="ad-section">
+            <div class="container">
+                <div class="ad-space">
+                    <div class="ad-placeholder">
+                        <span>Advertisement Space</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+        <!-- Live Sessions Section -->
+        <section class="live-sessions-section">
+            <div class="container">
+                <div class="live-sessions-content scroll-animate">
+                    <div class="live-sessions-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h2>Join Our Live Sessions</h2>
+                    <p class="lead">Connect with ADHD specialists and a supportive community in real-time. Get answers, share experiences, and learn effective strategies.</p>
+                    <div class="live-sessions-features">
+                        <div class="feature">
+                            <div class="feature-content">
+                                <i class="fas fa-users"></i>
+                                <span>Group Discussions</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-content">
+                                <i class="fas fa-user-md"></i>
+                                <span>Expert Q&A</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-content">
+                                <i class="fas fa-hands-helping"></i>
+                                <span>Peer Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/live-sessions" class="btn btn-purple btn-lg">
+                        <i class="fas fa-play-circle me-2"></i>
+                        Join Next Session
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivational Quote CTA 1 -->
+        <section class="quote-cta">
+            <div class="container">
+                <div class="quote-card animate-fadeInUp">
+                    <h2 class="quote-text">"Focus on progress, not perfection."</h2>
+                    <p class="quote-author">- ADHD Support</p>
+                    <a href="/courses" class="btn btn-purple">Explore Our Courses</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Space 2 -->
+        <section class="ad-section">
+            <div class="container">
+                <div class="ad-space">
+                    <div class="ad-placeholder">
+                        <span>Advertisement Space</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section scroll-animate">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stat-number">10,000+</h3>
+                        <p class="stat-label">Active Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="stat-number">500+</h3>
+                        <p class="stat-label">Expert Courses</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="stat-number">95%</h3>
+                        <p class="stat-label">Success Rate</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="stat-number">15,000+</h3>
+                        <p class="stat-label">Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Courses Section -->
+        <section class="popular-courses">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <span class="badge rounded-pill mb-2" style="background-color: var(--purple-700)">Featured</span>
+                        <h2 class="section-title">Popular Courses</h2>
+                        <p class="section-description">Discover our most impactful courses designed to help you thrive with ADHD</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Course Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="./Images/course-1.jpg" alt="ADHD Essentials Course">
+                                <span class="course-badge">Bestseller</span>
+                            </div>
+                            <div class="course-content">
+                                <span class="course-category">Fundamentals</span>
+                                <h3>ADHD Essentials: Understanding & Thriving</h3>
+                                <p>Master the fundamentals of ADHD and develop practical strategies for daily success.</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 8 weeks</span>
+                                    <span><i class="fas fa-user-graduate"></i> 2.5k+ enrolled</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>4.8 (350 reviews)</span>
+                                </div>
+                                <a href="/courses/adhd-essentials" class="btn btn-purple w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="./Images/course-2.jpg" alt="Time Management Course">
+                                <span class="course-badge">New</span>
+                            </div>
+                            <div class="course-content">
+                                <span class="course-category">Productivity</span>
+                                <h3>Time Management for ADHD Minds</h3>
+                                <p>Learn effective time management techniques tailored for individuals with ADHD.</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 6 weeks</span>
+                                    <span><i class="fas fa-user-graduate"></i> 1.2k+ enrolled</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.9 (180 reviews)</span>
+                                </div>
+                                <a href="/courses/time-management" class="btn btn-purple w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="./Images/course-3.jpg" alt="Social Skills Course">
+                                <span class="course-badge">Popular</span>
+                            </div>
+                            <div class="course-content">
+                                <span class="course-category">Social Skills</span>
+                                <h3>Building Better Relationships with ADHD</h3>
+                                <p>Enhance your social skills and build stronger relationships while managing ADHD.</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 7 weeks</span>
+                                    <span><i class="fas fa-user-graduate"></i> 1.8k+ enrolled</span>
+                                </div>
+                                <div class="course-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span>4.7 (220 reviews)</span>
+                                </div>
+                                <a href="/courses/social-skills" class="btn btn-purple w-100">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="success-stories">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <span class="badge rounded-pill mb-2" style="background-color: var(--purple-700)">Testimonials</span>
+                        <h2 class="section-title">Success Stories</h2>
+                        <p class="section-description">Real stories from our community members who have transformed their lives</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Success Story 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="success-story-card">
+                            <div class="story-image">
+                                <img src="./Images/story-1.jpg" alt="Sarah's Success Story">
+                                <div class="story-overlay"></div>
+                            </div>
+                            <div class="story-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <h3>Finding My Rhythm</h3>
+                                <p class="story-text">The time management course completely changed how I approach my daily tasks. I've gone from constantly playing catch-up to staying ahead of schedule.</p>
+                                <div class="story-meta">
+                                    <div class="story-author">Sarah Mitchell</div>
+                                    <div class="story-role">Marketing Professional</div>
+                                </div>
+                                <div class="story-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>40% productivity boost</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-calendar-check"></i>
+                                        <span>90% less missed deadlines</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Story 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="success-story-card">
+                            <div class="story-image">
+                                <img src="./Images/story-2.jpg" alt="David's Success Story">
+                                <div class="story-overlay"></div>
+                            </div>
+                            <div class="story-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <h3>Academic Achievement</h3>
+                                <p class="story-text">Understanding my ADHD through this platform helped me develop strategies that work for me. My grades improved significantly, and I'm now thriving in college.</p>
+                                <div class="story-meta">
+                                    <div class="story-author">David Chen</div>
+                                    <div class="story-role">College Student</div>
+                                </div>
+                                <div class="story-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>GPA from 2.8 to 3.9</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-tasks"></i>
+                                        <span>85% assignment completion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Story 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="success-story-card">
+                            <div class="story-image">
+                                <img src="./Images/story-3.jpg" alt="Emma's Success Story">
+                                <div class="story-overlay"></div>
+                            </div>
+                            <div class="story-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <h3>Career Growth</h3>
+                                <p class="story-text">The social skills course gave me the confidence to better communicate with my team. I've since been promoted to a leadership position!</p>
+                                <div class="story-meta">
+                                    <div class="story-author">Emma Rodriguez</div>
+                                    <div class="story-role">Team Leader</div>
+                                </div>
+                                <div class="story-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-users"></i>
+                                        <span>Leading 12+ team members</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>2 promotions in 1 year</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="features-section scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Comprehensive support for your ADHD journey</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Expert-Led Content</h3>
+                        <p>Learn from certified ADHD specialists and mental health professionals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Community Support</h3>
+                        <p>Connect with others who understand your journey and share experiences.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Flexible Learning</h3>
+                        <p>Access resources anytime, anywhere, at your own pace.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Track Progress</h3>
+                        <p>Monitor your development with detailed progress tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section scroll-animate">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Journey?</h2>
+                    <p>Join thousands of others who have transformed their lives with our support.</p>
+                    <div class="cta-buttons">
+                        <a href="/signup" class="btn btn-purple btn-lg">Get Started Now</a>
+                        <a href="/courses" class="btn btn-outline-purple btn-lg">Explore Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-bot-toggle" id="chatBotToggle" aria-label="Toggle chat bot">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container" id="chatBotContainer">
+            <div class="chat-bot-header">
+                <h3>ADHD Support Assistant</h3>
+                <button class="chat-bot-close" id="chatBotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-bot-messages" id="chatBotMessages">
+                <div class="chat-message bot">
+                    <p>Hello! I'm here to help you with any questions about ADHD. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chatBotInput" placeholder="Type your message..." aria-label="Chat message">
+                <button id="chatBotSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                    <h5 class="footer-heading">About ADHD Support</h5>
+                    <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>
+                            <a href="mailto:support@adhd.com">
+                                <i class="far fa-envelope me-2"></i>
+                                support@adhd.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890">
+                                <i class="fas fa-phone me-2"></i>
+                                +1 (234) 567-890
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                    <h5 class="footer-heading">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-4 border-top">
+                <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+            </div>
+        </div>
+        </footer>
+    
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/chatbot.js"></script>
+    <script src="./Js/animations.js"></script>
+</body>
+
+</html>

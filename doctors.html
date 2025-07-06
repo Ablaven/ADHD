@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our expert ADHD specialists and healthcare professionals">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <title>Our Doctors - ADHD Support Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span>ADHD Support</span>
+            </a>
+            
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live-sessions.html">Live Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parents.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="doctors-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content scroll-animate">
+                            <h1>Expert ADHD Specialists</h1>
+                            <p class="lead">Connect with experienced professionals who understand and specialize in ADHD diagnosis, treatment, and support.</p>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">25+</span>
+                                    <span class="stat-label">Specialists</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Specialties</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">4.8</span>
+                                    <span class="stat-label">Avg. Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image scroll-animate" style="animation-delay: 0.3s">
+                            <img src="./Images/doctors-hero.jpg" alt="ADHD Specialists Team" class="img-fluid rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Carousel -->
+        <section class="featured-carousel scroll-animate">
+            <div class="container-fluid px-0">
+                <div class="carousel-wrapper">
+                    <!-- Carousel Navigation -->
+                    <div class="carousel-nav">
+                        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Main Carousel -->
+                    <div class="carousel-container" id="doctorsCarousel">
+                        <div class="carousel-track">
+                            <!-- Carousel Cards -->
+                            <div class="carousel-card active">
+                                <div class="card-content">
+                                    <div class="card-image">
+                                        <img src="./Images/65853cb72d33d.jpg" alt="Dr. Sarah Mitchell" class="doctor-portrait">
+                                        <div class="image-overlay"></div>
+                                    </div>
+                                    <div class="card-info">
+                                        <span class="specialty-tag">Child Psychiatrist</span>
+                                        <h3>Dr. Sarah Mitchell</h3>
+                                        <div class="stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.9</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-user-md"></i>
+                                                <span>15+ Years</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-certificate"></i>
+                                                <span>Top Rated</span>
+                                            </div>
+                                        </div>
+                                        <p class="testimonial">"Dr. Mitchell's expertise in ADHD has been transformative for our family. Her approach combines deep knowledge with genuine care."</p>
+                                        <button class="btn btn-purple btn-lg" onclick="openBookingModal(1)">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-card">
+                                <div class="card-content">
+                                    <div class="card-image">
+                                        <img src="./Images/doctor12.jpg" alt="Dr. Thomas Brown" class="doctor-portrait">
+                                        <div class="image-overlay"></div>
+                                    </div>
+                                    <div class="card-info">
+                                        <span class="specialty-tag">Neuropsychiatrist</span>
+                                        <h3>Dr. Thomas Brown</h3>
+                                        <div class="stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.9</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-user-md"></i>
+                                                <span>16+ Years</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-flask"></i>
+                                                <span>Research Lead</span>
+                                            </div>
+                                        </div>
+                                        <p class="testimonial">"A pioneer in ADHD research and treatment. Dr. Brown's innovative approaches have helped countless patients achieve breakthrough results."</p>
+                                        <button class="btn btn-purple btn-lg" onclick="openBookingModal(12)">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-card">
+                                <div class="card-content">
+                                    <div class="card-image">
+                                        <img src="./Images/doctor6.jpg" alt="Dr. David Anderson" class="doctor-portrait">
+                                        <div class="image-overlay"></div>
+                                    </div>
+                                    <div class="card-info">
+                                        <span class="specialty-tag">Adult Psychiatrist</span>
+                                        <h3>Dr. David Anderson</h3>
+                                        <div class="stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.9</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-user-md"></i>
+                                                <span>20+ Years</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-award"></i>
+                                                <span>Most Experienced</span>
+                                            </div>
+                                        </div>
+                                        <p class="testimonial">"Dr. Anderson's extensive experience and compassionate approach make him an outstanding choice for adult ADHD treatment."</p>
+                                        <button class="btn btn-purple btn-lg" onclick="openBookingModal(6)">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                            <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                            <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Doctors -->
+        <section class="featured-doctors scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Featured Specialists</h2>
+                <p class="section-subtitle">Meet our highly rated and experienced ADHD specialists</p>
+                <div class="featured-doctors-grid">
+                    <!-- Featured doctors will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section scroll-animate">
+            <div class="container">
+                <div class="search-container">
+                    <h2 class="section-title">Find Your Specialist</h2>
+                    <p class="section-subtitle">Use our advanced filters to find the perfect match for your needs</p>
+                    <div class="search-filters">
+                        <div class="row g-3">
+                            <div class="col-lg-12">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                    <input type="text" id="doctorSearch" class="form-control" placeholder="Search by name, specialty, or expertise...">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <select id="specialtyFilter" class="form-select" aria-label="Filter by specialty">
+                                    <option value="">All Specialties</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3">
+                                <select id="experienceFilter" class="form-select" aria-label="Filter by experience">
+                                    <option value="">Any Experience</option>
+                                    <option value="15">15+ Years</option>
+                                    <option value="10">10+ Years</option>
+                                    <option value="5">5+ Years</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3">
+                                <select id="ratingFilter" class="form-select" aria-label="Filter by rating">
+                                    <option value="">Any Rating</option>
+                                    <option value="4.5">4.5+ Stars</option>
+                                    <option value="4.0">4.0+ Stars</option>
+                                    <option value="3.5">3.5+ Stars</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3">
+                                <select id="availabilityFilter" class="form-select" aria-label="Filter by availability">
+                                    <option value="">Any Availability</option>
+                                    <option value="online">Available Now</option>
+                                    <option value="busy">Busy</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Grid -->
+        <section class="doctors-grid-section scroll-animate">
+            <div class="container">
+                <div id="doctorsGrid" class="doctors-grid">
+                    <!-- Doctors will be dynamically inserted here -->
+                </div>
+                <div id="noResults" class="no-results d-none">
+                    <i class="fas fa-search fa-3x mb-3"></i>
+                    <h3>No specialists found</h3>
+                    <p>Try adjusting your search criteria or <a href="#" class="text-purple" id="clearFilters">clear all filters</a></p>
+                </div>
+                <div class="text-center mt-4">
+                    <button id="loadMore" class="btn btn-outline-purple btn-lg">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="why-choose-doctors scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Why Choose Our Specialists</h2>
+                <p class="section-subtitle">Experience the difference with our dedicated ADHD professionals</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certified Experts</h3>
+                        <p>All our specialists are certified and experienced in ADHD diagnosis and treatment.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Online Consultations</h3>
+                        <p>Connect with specialists from the comfort of your home through secure video sessions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Book appointments at times that work best for you with our easy scheduling system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Privacy First</h3>
+                        <p>Your privacy and data security are our top priorities with encrypted communications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Modal -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="bookingModalLabel">Book Appointment</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="booking-doctor-info mb-4">
+                            <!-- Doctor info will be dynamically inserted here -->
+                        </div>
+                        <form id="bookingForm" class="booking-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="appointmentDate" class="form-label">Preferred Date</label>
+                                    <input type="date" class="form-control" id="appointmentDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="appointmentTime" class="form-label">Preferred Time</label>
+                                    <select class="form-select" id="appointmentTime" required>
+                                        <option value="">Select time...</option>
+                                        <!-- Time slots will be dynamically populated -->
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="appointmentType" class="form-label">Appointment Type</label>
+                                    <select class="form-select" id="appointmentType" required>
+                                        <option value="">Select type...</option>
+                                        <option value="initial">Initial Consultation (60 min)</option>
+                                        <option value="followup">Follow-up Session (30 min)</option>
+                                        <option value="assessment">Full Assessment (90 min)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="appointmentNotes" class="form-label">Additional Notes</label>
+                                    <textarea class="form-control" id="appointmentNotes" rows="3" placeholder="Any specific concerns or questions..."></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" form="bookingForm" class="btn btn-purple">Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                    <h5 class="footer-heading">About ADHD Support</h5>
+                    <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>
+                            <a href="mailto:support@adhd.com">
+                                <i class="far fa-envelope me-2"></i>
+                                support@adhd.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890">
+                                <i class="fas fa-phone me-2"></i>
+                                +1 (234) 567-890
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                    <h5 class="footer-heading">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-4 border-top">
+                <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-bot-toggle" id="chatBotToggle" aria-label="Toggle chat bot">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container" id="chatBotContainer">
+            <div class="chat-bot-header">
+                <h3>ADHD Support Assistant</h3>
+                <button class="chat-bot-close" id="chatBotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-bot-messages" id="chatBotMessages">
+                <div class="chat-message bot">
+                    <p>Hello! I'm here to help you find the right specialist for your needs. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chatBotInput" placeholder="Type your message..." aria-label="Chat message">
+                <button id="chatBotSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/animations.js"></script>
+    <script src="./Js/chatbot.js"></script>
+    <script src="./Js/doctors-data.js"></script>
+    <script src="./Js/doctors-search.js"></script>
+    <script src="./Js/theme.js"></script>
+</body>
+</html> 

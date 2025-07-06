@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADHD Support Platform Blog - Latest insights, tips, and resources">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <title>Blog - ADHD Support Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span>ADHD Support</span>
+            </a>
+            
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live-sessions.html">Live Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parents.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html#overview"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Blog Hero Section -->
+        <header class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <span class="badge rounded-pill mb-2" style="background-color: var(--purple-700)">Our Blog</span>
+                        <h1 class="display-4 mb-4" style="color: var(--purple-100);">ADHD Insights & Resources</h1>
+                        <p class="lead mb-5" style="color: var(--purple-200);">Discover expert advice, latest research, and practical strategies for managing ADHD</p>
+                        <div class="search-box mb-4">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="form-control" placeholder="Search articles...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Featured Posts -->
+        <section class="featured-posts py-5" style="background-color: var(--purple-800);">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" style="color: var(--purple-100);">Featured Articles</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="featured-post-card p-4 mb-4" style="background-color: var(--purple-700); border-radius: 15px;">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <img src="Images/65853cb72d33d.jpg" alt="Featured Article" class="img-fluid rounded" style="object-fit: cover; height: 200px; width: 100%;">
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="badge bg-purple mb-3">Featured</span>
+                                    <h3 style="color: var(--purple-100);">Understanding ADHD: A Comprehensive Guide for Parents</h3>
+                                    <p class="mb-4" style="color: var(--purple-300);">Learn about the signs, symptoms, and effective strategies for supporting children with ADHD. This guide provides practical insights and expert advice.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="Images/65853cb72d33d.jpg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+                                            <div class="ms-3">
+                                                <p class="mb-0" style="color: var(--purple-200);">Dr. Sarah Johnson</p>
+                                                <small style="color: var(--purple-300);">Posted on May 15, 2024</small>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-purple">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories py-5">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-auto">
+                        <button class="btn btn-purple me-2 mb-2 category-btn" data-category="all">All Posts</button>
+                        <button class="btn btn-outline-purple me-2 mb-2 category-btn" data-category="research-studies">Research & Studies</button>
+                        <button class="btn btn-outline-purple me-2 mb-2 category-btn" data-category="tips-strategies">Tips & Strategies</button>
+                        <button class="btn btn-outline-purple me-2 mb-2 category-btn" data-category="parent-resources">Parent Resources</button>
+                        <button class="btn btn-outline-purple me-2 mb-2 category-btn" data-category="success-stories">Success Stories</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Blog posts will be dynamically inserted here -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-4">
+                    <button class="btn btn-lg btn-purple load-more-btn">Load More Articles <i class="fas fa-arrow-down ms-2"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section py-5" style="background-color: var(--purple-700);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h3 class="mb-4" style="color: var(--purple-100);">Stay Updated with ADHD Insights</h3>
+                        <p class="mb-4" style="color: var(--purple-200);">Subscribe to our newsletter for the latest articles, research, and expert advice</p>
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control" placeholder="Enter your email" style="background-color: var(--purple-800); border: none; color: var(--purple-100);">
+                            <button type="submit" class="btn btn-purple">Subscribe <i class="fas fa-paper-plane ms-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <!-- Footer -->
+ <footer class="footer-section" role="contentinfo">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                <h5 class="footer-heading">About ADHD Support</h5>
+                <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                <h5 class="footer-heading">Contact Us</h5>
+                <ul class="list-unstyled footer-links">
+                    <li>
+                        <a href="mailto:support@adhd.com">
+                            <i class="far fa-envelope me-2"></i>
+                            support@adhd.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (234) 567-890
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                <h5 class="footer-heading">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-4 mt-4 border-top">
+            <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/blog.js"></script>
+    <script src="./Js/theme.js"></script>
+</body>
+</html> 

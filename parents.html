@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resources and support for parents of children with ADHD">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <title>Parents Resources - ADHD Support Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span>ADHD Support</span>
+            </a>
+            
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live-sessions.html">Live Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="parents.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html#overview"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="parents-hero">
+            <div class="container">
+                <div class="parents-hero-content scroll-animate">
+                    <h1>Supporting Your Child's Journey</h1>
+                    <p class="lead">Resources, guidance, and community support for parents navigating ADHD</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Resources -->
+        <section class="quick-resources scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Essential Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Educational Guides</h3>
+                        <p>Comprehensive guides to understanding ADHD and supporting your child's development</p>
+                        <a href="#" class="btn btn-purple" data-resource="understanding-adhd">Access Guides</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Daily Planners</h3>
+                        <p>Downloadable planners and schedules to help establish routines</p>
+                        <a href="#" class="btn btn-purple" data-resource="daily-routines">Get Planners</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Support Groups</h3>
+                        <p>Connect with other parents and share experiences in our community</p>
+                        <a href="#" class="btn btn-purple" data-resource="support-groups">Join Groups</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Library</h3>
+                        <p>Expert talks and practical demonstrations for parents</p>
+                        <a href="#" class="btn btn-purple" data-resource="video-library">Watch Videos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="parenting-tips scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Practical Parenting Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <span class="tip-number">01</span>
+                        <h3>Establish Routines</h3>
+                        <p>Create consistent daily schedules to help your child stay organized and focused</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-number">02</span>
+                        <h3>Break Tasks Down</h3>
+                        <p>Divide large tasks into smaller, manageable steps for better completion</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-number">03</span>
+                        <h3>Positive Reinforcement</h3>
+                        <p>Celebrate achievements and progress to build confidence and motivation</p>
+                    </div>
+                    <div class="tip-card">
+                        <span class="tip-number">04</span>
+                        <h3>Clear Communication</h3>
+                        <p>Use simple, direct instructions and maintain open dialogue</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshop Section -->
+        <section class="parent-workshops scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Upcoming Workshops</h2>
+                <div class="workshops-grid">
+                    <div class="workshop-card">
+                        <div class="workshop-date">
+                            <span class="month">MAR</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="workshop-info">
+                            <h3>Understanding ADHD Behaviors</h3>
+                            <p class="workshop-time"><i class="far fa-clock"></i> 2:00 PM - 4:00 PM EST</p>
+                            <p class="workshop-desc">Learn to identify and respond to common ADHD behaviors effectively</p>
+                            <button class="btn btn-purple">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="workshop-card">
+                        <div class="workshop-date">
+                            <span class="month">MAR</span>
+                            <span class="day">22</span>
+                        </div>
+                        <div class="workshop-info">
+                            <h3>Academic Success Strategies</h3>
+                            <p class="workshop-time"><i class="far fa-clock"></i> 1:00 PM - 3:00 PM EST</p>
+                            <p class="workshop-desc">Practical tips for supporting your child's academic journey</p>
+                            <button class="btn btn-purple">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="workshop-card">
+                        <div class="workshop-date">
+                            <span class="month">MAR</span>
+                            <span class="day">29</span>
+                        </div>
+                        <div class="workshop-info">
+                            <h3>Managing Screen Time</h3>
+                            <p class="workshop-time"><i class="far fa-clock"></i> 3:00 PM - 4:30 PM EST</p>
+                            <p class="workshop-desc">Balancing technology use and establishing healthy boundaries</p>
+                            <button class="btn btn-purple">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="success-stories scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Parent Success Stories</h2>
+                <p class="section-subtitle">Real experiences from parents in our community</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="story-card">
+                            <div class="story-image">
+                                <img src="./Images/parent-story-1.jpg" alt="Sarah and her son" class="img-fluid">
+                            </div>
+                            <div class="story-content">
+                                <h3>Sarah's Journey</h3>
+                                <p class="story-quote">"The strategies we learned here transformed our daily routine. My son is now thriving in school and at home."</p>
+                                <span class="story-author">- Sarah M., Parent of 9-year-old</span>
+                                <a href="#" class="btn btn-outline-purple mt-3">Read Full Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="story-card">
+                            <div class="story-image">
+                                <img src="./Images/parent-story-2.jpg" alt="David and his daughter" class="img-fluid">
+                            </div>
+                            <div class="story-content">
+                                <h3>David's Experience</h3>
+                                <p class="story-quote">"Finding this community changed everything. We finally had the support and understanding we needed."</p>
+                                <span class="story-author">- David R., Parent of 12-year-old</span>
+                                <a href="#" class="btn btn-outline-purple mt-3">Read Full Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="story-card">
+                            <div class="story-image">
+                                <img src="./Images/parent-story-3.jpg" alt="Maria and her children" class="img-fluid">
+                            </div>
+                            <div class="story-content">
+                                <h3>Maria's Path</h3>
+                                <p class="story-quote">"The expert guidance and resources here helped us build a positive and supportive environment at home."</p>
+                                <span class="story-author">- Maria L., Parent of twins</span>
+                                <a href="#" class="btn btn-outline-purple mt-3">Read Full Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resource Library -->
+        <section class="resource-library scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Resource Library</h2>
+                <p class="section-subtitle">Comprehensive tools and materials for every stage of your journey</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="resource-category">
+                            <i class="fas fa-book"></i>
+                            <h3>Educational Materials</h3>
+                            <ul class="resource-list">
+                                <li><a href="#" data-resource="understanding-adhd">Understanding ADHD Guide</a></li>
+                                <li><a href="#" data-resource="school-accommodation">School Accommodation Tips</a></li>
+                                <li><a href="#" data-resource="homework-strategies">Homework Strategies</a></li>
+                                <li><a href="#" data-resource="executive-function">Executive Function Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="resource-category">
+                            <i class="fas fa-tools"></i>
+                            <h3>Practical Tools</h3>
+                            <ul class="resource-list">
+                                <li><a href="#" data-resource="daily-routines">Daily Routine Templates</a></li>
+                                <li><a href="#" data-resource="behavior-tracking">Behavior Tracking Charts</a></li>
+                                <li><a href="#" data-resource="reward-system">Reward System Guide</a></li>
+                                <li><a href="#" data-resource="organization">Organization Checklists</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="resource-category">
+                            <i class="fas fa-heart"></i>
+                            <h3>Emotional Support</h3>
+                            <ul class="resource-list">
+                                <li><a href="#" data-resource="self-care">Self-Care for Parents</a></li>
+                                <li><a href="#" data-resource="confidence">Building Confidence</a></li>
+                                <li><a href="#" data-resource="frustration">Managing Frustration</a></li>
+                                <li><a href="#" data-resource="communication">Family Communication</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="resource-category">
+                            <i class="fas fa-users"></i>
+                            <h3>Community Resources</h3>
+                            <ul class="resource-list">
+                                <li><a href="#" data-resource="support-groups">Local Support Groups</a></li>
+                                <li><a href="#" data-resource="professional-directory">Professional Directory</a></li>
+                                <li><a href="#" data-resource="school-programs">School Programs</a></li>
+                                <li><a href="#" data-resource="advocacy">Advocacy Resources</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section scroll-animate">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions from parents about supporting children with ADHD</p>
+                <div class="accordion" id="parentFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How can I help my child stay focused on homework?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#parentFAQ">
+                            <div class="accordion-body">
+                                Create a dedicated, quiet study space, break homework into smaller tasks, use timers for work periods, and incorporate regular breaks. Consider using visual schedules and reward systems for completed tasks.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What should I tell my child's teacher about their ADHD?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#parentFAQ">
+                            <div class="accordion-body">
+                                Share your child's diagnosis, specific challenges, successful strategies from home, and any accommodations that have worked. Maintain open communication and work together to create a supportive learning environment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                How can I help my child build social skills?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#parentFAQ">
+                            <div class="accordion-body">
+                                Practice role-playing social situations, encourage structured activities with peers, teach turn-taking and listening skills, and consider social skills groups. Provide positive reinforcement for good social interactions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                What are effective discipline strategies for children with ADHD?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#parentFAQ">
+                            <div class="accordion-body">
+                                Use clear, consistent rules and consequences, implement immediate feedback, focus on positive reinforcement, and avoid harsh punishment. Consider behavior charts and reward systems for good behavior.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Network -->
+        <section class="support-network scroll-animate">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="support-content">
+                            <h2>Join Our Parent Network</h2>
+                            <p>Connect with other parents, share experiences, and access exclusive resources in our supportive community.</p>
+                            <ul class="support-features">
+                                <li><i class="fas fa-check-circle"></i> Monthly virtual meetups</li>
+                                <li><i class="fas fa-check-circle"></i> Private discussion forums</li>
+                                <li><i class="fas fa-check-circle"></i> Expert Q&A sessions</li>
+                                <li><i class="fas fa-check-circle"></i> Resource library access</li>
+                            </ul>
+                            <button class="btn btn-purple btn-lg">Join the Community</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="support-image">
+                            <img src="./Images/parent-community.jpg" alt="Parent community meeting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <!-- Footer -->
+ <footer class="footer-section" role="contentinfo">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                <h5 class="footer-heading">About ADHD Support</h5>
+                <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                <h5 class="footer-heading">Contact Us</h5>
+                <ul class="list-unstyled footer-links">
+                    <li>
+                        <a href="mailto:support@adhd.com">
+                            <i class="far fa-envelope me-2"></i>
+                            support@adhd.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (234) 567-890
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                <h5 class="footer-heading">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-4 mt-4 border-top">
+            <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="chat-bot" id="chatBot">
+        <div class="chat-bot-toggle" id="chatBotToggle" aria-label="Toggle chat bot">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container" id="chatBotContainer">
+            <div class="chat-bot-header">
+                <h3>ADHD Support Assistant</h3>
+                <button class="chat-bot-close" id="chatBotClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-bot-messages" id="chatBotMessages">
+                <div class="chat-message bot">
+                    <p>Hello! I'm here to help you find resources and support for your child. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" id="chatBotInput" placeholder="Type your message..." aria-label="Chat message">
+                <button id="chatBotSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/animations.js"></script>
+    <script src="./Js/chatbot.js"></script>
+    <script src="./Js/theme.js"></script>
+    <script src="./Js/parents.js"></script>
+</body>
+</html> 

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADHD Support Platform Blog - Latest insights, tips, and resources">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <title>Blog Post - ADHD Support Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./Images/logo.png" alt="ADHD Support Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <span>ADHD Support</span>
+            </a>
+            
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="live-sessions.html">Live Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parents.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Auth buttons for non-authenticated users -->
+                <div class="auth-buttons d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-purple">Log In</a>
+                    <a href="signup.html" class="btn btn-purple">Sign Up</a>
+                </div>
+
+                <!-- Profile menu for authenticated users -->
+                <div class="profile-menu d-none">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle profile-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Images/default-avatar.png" alt="Profile" class="profile-avatar">
+                            <span class="profile-name">Loading...</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="profile.html#overview"><i class="fas fa-user me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.html#settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Blog Post Content -->
+        <article class="blog-post-content py-5">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="blog.html" style="color: var(--purple-300);">Blog</a></li>
+                        <li class="breadcrumb-item active" id="post-category" aria-current="page" style="color: var(--purple-200);"></li>
+                    </ol>
+                </nav>
+
+                <!-- Post Header -->
+                <header class="post-header mb-5">
+                    <span class="badge bg-purple mb-3" id="post-category-badge"></span>
+                    <h1 class="display-4 mb-4" id="post-title" style="color: var(--purple-100);"></h1>
+                    
+                    <div class="post-meta d-flex align-items-center mb-4">
+                        <img src="" alt="Author" id="post-author-img" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                        <div class="ms-3">
+                            <p class="mb-0" id="post-author" style="color: var(--purple-200);"></p>
+                            <small id="post-date" style="color: var(--purple-300);"></small>
+                            <small class="ms-3" id="post-read-time" style="color: var(--purple-300);"></small>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Post Content -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Featured Image -->
+                        <div class="post-featured-image mb-5">
+                            <img src="" id="post-image" alt="" class="img-fluid rounded" style="width: 100%; max-height: 500px; object-fit: cover;">
+                        </div>
+
+                        <!-- Post Content -->
+                        <div class="post-content" id="post-content" style="color: var(--purple-200);">
+                            <!-- Content will be dynamically inserted here -->
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="post-tags mt-5">
+                            <div class="d-flex gap-2" id="post-tags">
+                                <!-- Tags will be dynamically inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Share Buttons -->
+                        <div class="post-share mt-5">
+                            <h5 style="color: var(--purple-100);">Share this article</h5>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="#" class="btn btn-outline-purple"><i class="fab fa-facebook-f me-2"></i>Share</a>
+                                <a href="#" class="btn btn-outline-purple"><i class="fab fa-twitter me-2"></i>Tweet</a>
+                                <a href="#" class="btn btn-outline-purple"><i class="fab fa-linkedin-in me-2"></i>Share</a>
+                                <button class="btn btn-outline-purple" id="copyLink"><i class="fas fa-link me-2"></i>Copy Link</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Section -->
+                    <div class="col-lg-4">
+                        <div class="video-section sticky-top" style="top: 100px;">
+                            <div class="ratio ratio-16x9 mb-4" id="post-video">
+                                <!-- Video will be dynamically inserted here -->
+                            </div>
+                            <div class="video-description p-4" style="background-color: var(--purple-800); border-radius: 15px;">
+                                <h5 style="color: var(--purple-100);" id="video-title">Video Resources</h5>
+                                <p style="color: var(--purple-300);" id="video-description">Watch this helpful video for additional insights and visual demonstrations of the concepts discussed in this article.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Author Bio -->
+                <div class="author-bio mt-5 p-4" style="background-color: var(--purple-800); border-radius: 15px;">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <img src="" id="author-img" alt="" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        </div>
+                        <div class="col-md-10">
+                            <h5 id="author-name" style="color: var(--purple-100);"></h5>
+                            <p id="author-bio" style="color: var(--purple-300);"></p>
+                            <div class="author-social">
+                                <a href="#" class="me-3" style="color: var(--purple-300);"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3" style="color: var(--purple-300);"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" style="color: var(--purple-300);"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Posts -->
+                <section class="related-posts mt-5">
+                    <h3 class="mb-4" style="color: var(--purple-100);">Related Articles</h3>
+                    <div class="row" id="related-posts">
+                        <!-- Related posts will be dynamically inserted here -->
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+ <!-- Footer -->
+ <footer class="footer-section" role="contentinfo">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-6 animate-fadeInUp">
+                <h5 class="footer-heading">About ADHD Support</h5>
+                <p class="footer-text">Our mission is to provide accessible, reliable resources for individuals, parents, and educators navigating the world of ADHD. We're committed to fostering understanding and success through evidence-based support and community engagement.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 animate-fadeInUp" style="animation-delay: 0.4s">
+                <h5 class="footer-heading">Contact Us</h5>
+                <ul class="list-unstyled footer-links">
+                    <li>
+                        <a href="mailto:support@adhd.com">
+                            <i class="far fa-envelope me-2"></i>
+                            support@adhd.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+1234567890">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (234) 567-890
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 animate-fadeInUp" style="animation-delay: 0.6s">
+                <h5 class="footer-heading">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Connect with us on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-4 mt-4 border-top">
+            <p class="footer-text mb-0">&copy; 2024 ADHD Support. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/common.js"></script>
+    <script src="./Js/auth.js"></script>
+    <script src="./Js/blog-post.js"></script>
+    <script src="./Js/theme.js"></script>
+
+    <!-- Add custom styles for bullet points -->
+    <style>
+        /* Custom bullet points styling */
+        .post-content ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+
+        .post-content ul li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--purple-200);
+        }
+
+        .post-content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--purple-400);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .post-content ul li:hover::before {
+            background-color: var(--purple-300);
+            transform: translateY(-50%) scale(1.2);
+            transition: all 0.3s ease;
+        }
+
+        /* Custom heading styles */
+        .post-content h2 {
+            color: var(--purple-100);
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .post-content h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--purple-400);
+            border-radius: 3px;
+        }
+
+        /* Paragraph spacing */
+        .post-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Video section responsive styling */
+        .video-section {
+            background-color: var(--purple-800);
+            border-radius: 15px;
+            padding: 1rem;
+        }
+
+        @media (max-width: 991px) {
+            .video-section {
+                margin-top: 2rem;
+                position: relative !important;
+            }
+        }
+
+        /* Enhanced tag styling */
+        .post-tags .badge {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .post-tags .badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</body>
+</html> 
